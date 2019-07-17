@@ -8,6 +8,7 @@ class UserCtrl {
         ctx.body = db[ctx.params.id * 1]
     }
     create(ctx) {
+        console.log('request body ---', ctx.request.body)
         db.push(ctx.request.body)
         ctx.body = ctx.request.body
     }
