@@ -48,3 +48,5 @@ const token = jwt.sign({ name: 'lulu', secret }) // 生成签名
 jwt.verify(token) // 经过校验的解码
 ```
 
+>JWT最主要就是解决跨域问题，存储在客户端，服务端无状态的
+

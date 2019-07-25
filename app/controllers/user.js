@@ -1,5 +1,7 @@
 // const db = [{ name: 'argen' }]
 const { User } = require('../models/user')
+const jsonwebtoken = require('jsonwebtoken')
+const { serect } = require('../config')
 const errorMessage = {
     message: '用户不存在'
 }
@@ -31,6 +33,12 @@ class UserCtrl {
         const user = await User.findByIdAndRemove(ctx.params.id)
         // ctx.status = 204
         if (!user) ctx.throw(404, errorMessage)
+    }
+    async login(ctx) {
+        const user = User.findOne(ctx.params.id)
+        const { _id, name } = user
+        const token = jsonwebtoken.asign({ _id, name }, serect, { exprieIn: '1d' })
+        ctx.body = { token }
     }
 }
 
