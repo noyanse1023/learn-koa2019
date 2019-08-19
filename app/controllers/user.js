@@ -1,24 +1,44 @@
-const db = [{ name: 'argen' }]
+// const db = [{ name: 'argen' }]
+const { User } = require('../models/user')
+const jsonwebtoken = require('jsonwebtoken')
+const { serect } = require('../config')
+const errorMessage = {
+    message: '用户不存在'
+}
 
 class UserCtrl {
-    find(ctx) {
-        ctx.body = db
+    async find(ctx) {
+        const user = await User.find()
+        ctx.body = user
     }
-    findById(ctx) {
-        ctx.body = db[ctx.params.id * 1]
+    async findById(ctx) {
+        const user = await User.findById(ctx.params.id)
+        if (!user) ctx.throw(404, errorMessage)
+        ctx.body = user
     }
-    create(ctx) {
+    async create(ctx) {
         console.log('request body ---', ctx.request.body)
-        db.push(ctx.request.body)
-        ctx.body = ctx.request.body
+        // db.push(ctx.request.body)
+        const user = await new User(ctx.request.body).save()
+        ctx.body = user
     }
-    update(ctx) {
-        db[ctx.params.id * 1] = ctx.request.body
-        tx.body = ctx.request.body
+    async update(ctx) {
+        // db[ctx.params.id * 1] = ctx.request.body
+        const user = await User.findByIdAndUpdate(ctx.params.id, ctx.request.body)
+        if (!user) ctx.throw(404, errorMessage)
+        ctx.body = user
     }
-    del(ctx) {
-        db.splice(ctx.params.id * 1, 1)
-        ctx.status = 204
+    async del(ctx) {
+        // db.splice(ctx.params.id * 1, 1)
+        const user = await User.findByIdAndRemove(ctx.params.id)
+        // ctx.status = 204
+        if (!user) ctx.throw(404, errorMessage)
+    }
+    async login(ctx) {
+        const user = User.findOne(ctx.params.id)
+        const { _id, name } = user
+        const token = jsonwebtoken.asign({ _id, name }, serect, { exprieIn: '1d' })
+        ctx.body = { token }
     }
 }
 
