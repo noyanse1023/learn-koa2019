@@ -35,3 +35,12 @@ router.delete('/:id', del)
 router.post('/', login)
 
 module.exports = router
+
+function debounce(fn, time) {
+    let timer = null
+    return function(...args) {
+        timer = setTimeout(() => {
+            fn(...args)
+        }, time)
+    }
+}
