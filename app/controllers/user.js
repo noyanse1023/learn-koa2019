@@ -1,5 +1,5 @@
 // const db = [{ name: 'argen' }]
-const { User } = require('../models/user')
+const User = require('../models/user')
 const jsonwebtoken = require('jsonwebtoken')
 const { serect } = require('../config')
 const errorMessage = {
@@ -12,7 +12,11 @@ class UserCtrl {
         ctx.body = user
     }
     async findById(ctx) {
-        const user = await User.findById(ctx.params.id)
+        const { fields } = ctx.query
+        console.log('find by id', fields)
+        // 把 f 不存在的字段过滤掉
+        const selectFields = fields.split(';').filter(f => f).map(item => ' +' + item).join('')
+        const user = await User.findById(ctx.params.id).select(selectFields) // +employments +educations
         if (!user) ctx.throw(404, errorMessage)
         ctx.body = user
     }
@@ -24,6 +28,12 @@ class UserCtrl {
     }
     async update(ctx) {
         // db[ctx.params.id * 1] = ctx.request.body
+        ctx.verifyParams({
+            name: { type: 'string', required: true },
+            avatar_url: { type: 'string', required: false },
+            locations: { type: 'array', itemType: 'string', required: false},
+            employments: { type: 'array', itemType: 'object', required: false}
+        })
         const user = await User.findByIdAndUpdate(ctx.params.id, ctx.request.body)
         if (!user) ctx.throw(404, errorMessage)
         ctx.body = user
@@ -35,6 +45,7 @@ class UserCtrl {
         if (!user) ctx.throw(404, errorMessage)
     }
     async login(ctx) {
+        console.log('login', ctx.params.id)
         const user = User.findOne(ctx.params.id)
         const { _id, name } = user
         const token = jsonwebtoken.asign({ _id, name }, serect, { exprieIn: '1d' })
