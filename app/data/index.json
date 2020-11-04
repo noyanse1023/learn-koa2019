@@ -1,0 +1,267 @@
+{
+    "code": "0000",
+    "msg": "",
+    "data": {
+        "actStartTime": 1605664800000,
+        "actEndTime": 1605887999000,
+        "nowTime": 1604453000841,
+        "showTime": 1605456000000,
+        "rushToPurchaseNum": 1,
+        "rightFloorInfoList": [
+            {
+                "floorId": "F0000000000000001185",
+                "styleId": "S0000003",
+                "floorBackgroundLink": "https://resource.migufun.com/ucms/floor/20201029150200.png",
+                "mainTitle": "员工力荐",
+                "upMidTitle": "",
+                "rightContentList": [
+                    {
+                        "contentId": "W1000000000000018189",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101091419.png",
+                        "bgColor": null,
+                        "shortName": "bdhw-2",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "http://m.miguvideo.com/mgs/promotion/subject/migu_combine_member/prd/index.html?pageId=cc1827eee1c14288ace75b61604353c9&platform=PLATFORM&login=SSO",
+                        "gameCategoryDesc": "QA1TKQ"
+                    },
+                    {
+                        "contentId": "W1000000000000018190",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101091644.png",
+                        "bgColor": null,
+                        "shortName": "抄底抢购2",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "http://wap.cmread.com/nap/p/periodMonthlyPayDetail_new.jsp?vt=3&nid=590235003",
+                        "gameCategoryDesc": "QA2TSNK"
+                    },
+                    {
+                        "contentId": "W1000000000000018191",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101091818.png",
+                        "bgColor": null,
+                        "shortName": "咪咕音乐白金会员月包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "https://m.music.migu.cn/v3/music/topic/13679?ch=mgday",
+                        "gameCategoryDesc": "QA3YYYB"
+                    },
+                    {
+                        "contentId": "W1000000000000018192",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101091931.png",
+                        "bgColor": null,
+                        "shortName": "中信会员活动",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "http://u.cmread.com/11s13",
+                        "gameCategoryDesc": "QA4ZXHY"
+                    }
+                ]
+            },
+            {
+                "floorId": "F0000000000000001186",
+                "styleId": "S0000002",
+                "floorBackgroundLink": "https://resource.migufun.com/ucms/floor/20201029150404.png",
+                "mainTitle": "当红爆款",
+                "upMidTitle": "",
+                "rightContentList": [
+                    {
+                      "contentId": "W1000000000000018193",
+                      "picture": "https://resource.migufun.com/ucms/content/20201101092051.png",
+                      "bgColor": null,
+                      "shortName": "咪咕音乐芒果联合会员",
+                      "outUrlType": "1",
+                      "outUrlFormat": null,
+                      "outUrl": "https://h5.nf.migu.cn/app/gm/v1/index.html?id=90714",
+                      "gameCategoryDesc": "QB1YYMG"
+                    },
+                    {
+                        "contentId": "W1000000000000018193",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101092051.png",
+                        "bgColor": null,
+                        "shortName": "咪咕音乐芒果联合会员",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "https://h5.nf.migu.cn/app/gm/v1/index.html?id=90714",
+                        "gameCategoryDesc": "QB1YYMG"
+                    },
+                    {
+                        "contentId": "W1000000000000018194",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101092421.png",
+                        "bgColor": null,
+                        "shortName": "bdhw-3",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "http://m.miguvideo.com/mgs/common/miguPromotion/prd/provinceRouter.html?pageId=2643bb4295df4f62a55dce2ba493c473&mver=stable_version&platform=PLATFORM&login=SSO",
+                        "gameCategoryDesc": "QB2SPYB"
+                    },
+                    {
+                        "contentId": "W1000000000000018195",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101135551.png",
+                        "bgColor": null,
+                        "shortName": "bdhw-1",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "http://wap.cmread.com/r/p/periodMonthlyPayDetail.jsp?vt=3&nid=590002281",
+                        "gameCategoryDesc": "QB3YDZZNB"
+                    },
+                    {
+                        "contentId": "W1000000000000018196",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101093140.png",
+                        "bgColor": null,
+                        "shortName": "咪咕PLUS年卡",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "http://m.migudm.cn/spa/member/index.html?traceId=eb7ca1d5da7e47b1a7ab850d98cb48ff%3A04",
+                        "gameCategoryDesc": "QB4QQNB"
+                    }
+                ]
+            },
+            {
+                "floorId": "F0000000000000001187",
+                "styleId": "S0000002",
+                "floorBackgroundLink": "https://resource.migufun.com/ucms/floor/20201029150511.png",
+                "mainTitle": "超值尖货",
+                "upMidTitle": "",
+                "rightContentList": [
+                  {
+                    "contentId": "W1000000000000018197",
+                    "picture": "https://resource.migufun.com/ucms/content/20201101093554.png",
+                    "bgColor": null,
+                    "shortName": "咪咕快快黄金会员年包",
+                    "outUrlType": "1",
+                    "outUrlFormat": null,
+                    "outUrl": "https://sporth5.migufun.com/h5event/leaguer/commonpaynew.php?cfg_id=3&token=",
+                    "gameCategoryDesc": "QC1KKNB"
+                },
+                {
+                  "contentId": "W1000000000000018197",
+                  "picture": "https://resource.migufun.com/ucms/content/20201101093554.png",
+                  "bgColor": null,
+                  "shortName": "咪咕快快黄金会员年包",
+                  "outUrlType": "1",
+                  "outUrlFormat": null,
+                  "outUrl": "https://sporth5.migufun.com/h5event/leaguer/commonpaynew.php?cfg_id=3&token=",
+                  "gameCategoryDesc": "QC1KKNB"
+              },
+              {
+                "contentId": "W1000000000000018197",
+                "picture": "https://resource.migufun.com/ucms/content/20201101093554.png",
+                "bgColor": null,
+                "shortName": "咪咕快快黄金会员年包",
+                "outUrlType": "1",
+                "outUrlFormat": null,
+                "outUrl": "https://sporth5.migufun.com/h5event/leaguer/commonpaynew.php?cfg_id=3&token=",
+                "gameCategoryDesc": "QC1KKNB"
+            },
+                    {
+                        "contentId": "W1000000000000018197",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101093554.png",
+                        "bgColor": null,
+                        "shortName": "咪咕快快黄金会员年包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "https://sporth5.migufun.com/h5event/leaguer/commonpaynew.php?cfg_id=3&token=",
+                        "gameCategoryDesc": "QC1KKNB"
+                    },
+                    {
+                        "contentId": "W1000000000000018198",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101093700.png",
+                        "bgColor": null,
+                        "shortName": "咪咕快游超级会员月包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "https://g.migufun.com/11miguday",
+                        "gameCategoryDesc": "QC2KYYB"
+                    }
+                ]
+            },
+            {
+                "floorId": "F0000000000000001188",
+                "styleId": "S0000008",
+                "floorBackgroundLink": "https://resource.migufun.com/ucms/floor/20201029150938.png",
+                "mainTitle": "国潮甄选",
+                "upMidTitle": "",
+                "rightContentList": [
+                    {
+                        "contentId": "W1000000000000018201",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101093814.png",
+                        "bgColor": null,
+                        "shortName": "咪咕熊猫联合会员月包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "https://cx.migudm.cn/umwap/activity/page20191130/miguDay.html?channel=770000629",
+                        "gameCategoryDesc": "QD1QQYB"
+                    },
+                    {
+                        "contentId": "W1000000000000018202",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101093907.png",
+                        "bgColor": null,
+                        "shortName": "咪咕熊猫联合会员年包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "https://cx.migudm.cn/umwap/activity/page20191130/miguDay.html?channel=770000629",
+                        "gameCategoryDesc": "QD2QQNB"
+                    },
+                    {
+                        "contentId": "W1000000000000018203",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101094049.png",
+                        "bgColor": null,
+                        "shortName": "咪咕博物馆月包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "https://cx.migudm.cn/umwap/activity/page20200510/?channelId=750019718",
+                        "gameCategoryDesc": "QD3BWGYB"
+                    }
+                ]
+            },
+            {
+                "floorId": "F0000000000000001189",
+                "styleId": "S0000019",
+                "floorBackgroundLink": "https://resource.migufun.com/ucms/floor/20201029151029.png",
+                "mainTitle": "运动健身",
+                "upMidTitle": "",
+                "rightContentList": [
+                    {
+                        "contentId": "W1000000000000018204",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101094214.png",
+                        "bgColor": null,
+                        "shortName": "咪咕善跑轻享会员月包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "https://sporth5.migufun.com/h5event/leaguer/commonpaynew.php?cfg_id=2&token=",
+                        "gameCategoryDesc": "QE1MGSPYB"
+                    }
+                ]
+            },
+            {
+                "floorId": "F0000000000000001190",
+                "styleId": "S0000002",
+                "floorBackgroundLink": "https://resource.migufun.com/ucms/floor/20201029151115.png",
+                "mainTitle": "发现好货",
+                "upMidTitle": "",
+                "rightContentList": [
+                    {
+                        "contentId": "W1000000000000018205",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101094338.png",
+                        "bgColor": null,
+                        "shortName": "咪咕PLUS会员月包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "http://m.migudm.cn/spa/member/index.html?traceId=eb7ca1d5da7e47b1a7ab850d98cb48ff%3A04",
+                        "gameCategoryDesc": "QG1QQYB"
+                    },
+                    {
+                        "contentId": "W1000000000000018206",
+                        "picture": "https://resource.migufun.com/ucms/content/20201101094420.png",
+                        "bgColor": null,
+                        "shortName": "咪咕PLUS会员季包",
+                        "outUrlType": "1",
+                        "outUrlFormat": null,
+                        "outUrl": "http://m.migudm.cn/spa/member/index.html?traceId=eb7ca1d5da7e47b1a7ab850d98cb48ff%3A04",
+                        "gameCategoryDesc": "QG2QQJB"
+                    }
+                ]
+            }
+        ]
+    }
+}

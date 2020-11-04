@@ -1,5 +1,6 @@
-// const fs = require('fs')
+const fs = require('fs')
 const path = require('path')
+
 /**
  * @description 重构控制器
  */
@@ -7,10 +8,17 @@ class HomeCtl {
     index(ctx) {
         ctx.body = '这是主页'
     }
+    test(ctx) {
+       // 读取 json 文件并返回给前端
+        ctx.response.type = 'json'
+        const file = path.join(__dirname, '../data/index.json')
+        ctx.response.body = fs.createReadStream(file)
+    }
     upload(ctx) {
         // 获取上传文件
-        console.log('file info', ctx.request.files)
+        // const file = ctx.request.files.file
         const file = ctx.request.files.file
+        console.log('file info', ctx.request.files.file)
         const basename = path.basename(file.path) // basename 接收一个绝对路径，并返回basename
         // ctx.origin 就是 localhost:3000
         ctx.body = { path: `${ctx.origin}/uploads/${basename}` }

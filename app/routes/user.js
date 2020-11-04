@@ -8,7 +8,7 @@ const auth = async (ctx, next) => {
     const token = authorization.replace('Bearer', '')
     try {
         const user = jsonwebtoken.verify(token.secret)
-        ctx.state.user = user    
+        ctx.state.user = user
     } catch(err) {
         ctx.throw(401)
     }

@@ -7,6 +7,7 @@ const mongoose = require('mongoose')
 const { dbUrl } = require('./config')
 const path = require('path')
 const parameter = require('koa-parameter');
+const cors = require('@koa/cors');
 
 mongoose.connect(dbUrl, { useNewUrlParser: true }, () => {
     console.log('数据库连接成功')
@@ -16,6 +17,8 @@ mongoose.connection.on('error', () => {
 })
 
 const app = new Koa()
+
+app.use(cors());
 
 app.use(koaStatic(path.join(__dirname, 'public')))
 
