@@ -4,7 +4,7 @@ const router = require('./routes')
 const koaBody = require('koa-body')
 const koaStatic = require('koa-static')
 const mongoose = require('mongoose')
-const { dbUrl } = require('./config')
+const { dbUrl, port } = require('./config')
 const path = require('path')
 const parameter = require('koa-parameter');
 const cors = require('@koa/cors');
@@ -41,6 +41,6 @@ app.use(koaBody({
 
 router(app)
 
-app.listen(3000, () => {
-    console.log('your server is listening at port 3000')
+app.listen(port, () => {
+    console.log('your server is listening at port ' + port)
 }) 
